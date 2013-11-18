@@ -14,15 +14,11 @@ public class Tactical extends Game{
 	private GameScreen gameScreen;
 	
 	@Override
-	public void create() {
+	public void create() {		
 		
-		float w = Gdx.graphics.getWidth();
-		float h = Gdx.graphics.getHeight();
-		
-		camera = new OrthographicCamera();
-		camera.setToOrtho(false, w, h);
-		batch = new SpriteBatch();		
 		gameScreen = new GameScreen(); 
+		
+		setScreen(gameScreen);
 	}
 
 }

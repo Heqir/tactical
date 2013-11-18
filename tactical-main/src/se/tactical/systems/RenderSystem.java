@@ -7,6 +7,7 @@ import se.tactical.components.Transform;
 import com.artemis.Aspect;
 import com.artemis.ComponentMapper;
 import com.artemis.Entity;
+import com.artemis.World;
 import com.artemis.systems.EntityProcessingSystem;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -23,8 +24,12 @@ public class RenderSystem extends EntityProcessingSystem{
 	private ComponentMapper<Transform> transformMapper;
 	private ComponentMapper<Size> sizeMapper;
 	
-	public RenderSystem(SpriteBatch batch, Camera camera) {
+	public RenderSystem(SpriteBatch batch, Camera camera, World world) {
 		 super(Aspect.getAspectForOne(Spatial.class));
+		 this.batch = batch;
+		 this.camera = camera;
+		 this.world = world;
+		 initialize();
 	}
 	
 	
