@@ -4,7 +4,6 @@ import com.artemis.Aspect;
 import com.artemis.Entity;
 import com.artemis.EntitySystem;
 import com.artemis.utils.ImmutableBag;
-import com.badlogic.gdx.InputProcessor;
 
 /**
  * This system updates the player controlled entities.
