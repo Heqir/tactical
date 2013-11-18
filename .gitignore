@@ -5,6 +5,3 @@
 *.war
 *.ear
 
-# generated  files
-bin/
-gen/
