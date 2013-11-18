@@ -1,3 +1,4 @@
+package se.tactical;
 
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
