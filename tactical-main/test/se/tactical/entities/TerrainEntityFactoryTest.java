@@ -1,6 +1,6 @@
 package se.tactical.entities;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -12,8 +12,6 @@ import com.artemis.ComponentMapper;
 import com.artemis.Entity;
 import com.artemis.World;
 import com.artemis.managers.GroupManager;
-import com.artemis.managers.TagManager;
-
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public class TerrainEntityFactoryTest {
