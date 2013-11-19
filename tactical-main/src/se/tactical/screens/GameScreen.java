@@ -3,7 +3,6 @@ package se.tactical.screens;
 import se.tactical.entities.TerrainEntityFactory;
 import se.tactical.systems.RenderSystem;
 
-import com.artemis.Entity;
 import com.artemis.World;
 import com.artemis.managers.GroupManager;
 import com.badlogic.gdx.Gdx;
