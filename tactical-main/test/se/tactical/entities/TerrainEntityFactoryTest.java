@@ -42,19 +42,23 @@ public class TerrainEntityFactoryTest {
 		
 		Entity e = TerrainEntityFactory.createBasicTerrain (world,xPos, yPos, size, region);
 		
-		Transform t = transformMapper.get(e);
 		
+		
+		//Test so the position is set to right values
+		Transform t = transformMapper.get(e);
 		assertTrue(t.getX()==0);
 		assertTrue(t.getY()==0);
 		
+		//Test so the size is set to right values
 		Size s = sizeMapper.get(e);		
 		assertTrue(s.getWidth()==0);
 		assertTrue(s.getHeight()==0);
 		
-		Spatial spatial = spatialMapper.get(e);
-		
+		//Test so the spatial is set
+		Spatial spatial = spatialMapper.get(e);		
 		assertTrue(spatial!=null);
 		
+		//Test if the entity is added to the groups
 		assertTrue(gm.inInGroup(e, "TERRAIN"));
 		assertTrue(gm.inInGroup(e, "STATICENTITIES"));
 		
